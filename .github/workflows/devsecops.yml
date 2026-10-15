@@ -15,9 +15,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Semgrep SAST
-        uses: returntocorp/semgrep-action@v1
+        uses: semgrep/semgrep-action@v1
         with:
-          config: p/ci
+          config: p/default
 
   sca_scan:
     name: Run SCA Dependency Scan (Trivy)
